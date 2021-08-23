@@ -8,7 +8,7 @@ Details of the dataset | Values
 --- | ---
 Total number of swimmers | 1180
 Gender | Female
-Course | 100 yards FR 
+Course | 100 yards FR (freestyle) 
 Period | from 2000 to 2021
 Input   | times at the age of 10 to 15 
 Output  | time at 18 yo
@@ -39,7 +39,7 @@ Scaling    | [0, 1]
 Missing data were represented as NaNs and filled with the median of the column. Records made of single times (only one race at a given age) exhibit an unrealistic zero standard deviation, these values were also substituted by the variance of the columnn. 
 
 # Models
-Three different models were used: Support Vector Regressor, Decission Tree Regressor and Gradient Boost Regressor. Training data was used with 5-fold corss-validation with different settings for the hyperparameters. The best model according the mean absolute error (MAE) was chosen.
+Three different models were used: Support Vector Regressor (SVR), Decission Tree Regressor (DTR) and Gradient Boost Regressor (GBR). Training data was used with 5-fold corss-validation with different settings for the hyperparameters. The best model according the mean absolute error (MAE) was chosen.
 
 
 # Predictions
