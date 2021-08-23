@@ -44,7 +44,7 @@ Three different models were used: Support Vector Regressor (SVR), Decission Tree
 
 # Predictions
 
-Prediction for the Support Vector Regressor.
+Time predicted by each swimmer in the testing dataset using the SVR model.
 
 <p align="center">
   <img src="swimmers_pred.png" width="400" title="b"> 
