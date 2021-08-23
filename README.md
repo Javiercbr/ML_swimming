@@ -1,6 +1,6 @@
 # Regression analysis for predicting swimmers' performance
 
-Regression algorithms for predicting the performance of an 18 year old swimmer based on its records at younger ages (10 to 15). Data can retrieved from the website [1] as CSV using different filters (age, gender, etc.). The approach bases in [2] although different regressors techniques have been employed.
+Regression algorithms for predicting the performance of an 18-year-old swimmer based on its records at younger ages (10 to 15). Data can be retrieved from the website [1] as CSV using different filters (age, gender, etc.). The approach bases in [2] although different regressors techniques have been employed.
 
 # Data
 
@@ -13,14 +13,14 @@ Period | from 2000 to 2021
 Input   | times at the age of 10 to 15 
 Output  | time at 18 yo
 
-Each record is made of the several times representing mean, maximun and minimun time and standard deviation exhibited by a single swimmer at the ages from 10 to 15 and 18. Whereas mean values estimate the overall performance, maxima, minima and standard deviation give a measure of the stability of the training. The objective is to predict the average time of a swimmer at the age of 18 based on its records at younger ages.
+Each record is made of the several times representing mean, maximum and minimum times and standard deviation exhibited by a single swimmer at the ages from 10 to 15 and 18. Whereas mean values estimate the overall performance,maximum and minimum times and standard deviation give a measure of the stability reached by the swimmer. The aim is to predict the average time of a swimmer at the age of 18 based on its records at younger ages.
 
 <p align="center">
   <img src="table.png" width="1300" title="d"> 
 </p>
 
 
-A swimmer may not have a complete record, i.e. this menas that some records from 10 to 15 year old are missing. The number of missing ages follows the following distribution:
+A swimmer may not have a complete record, i.e. meaning that some records from 10 to 15-year-old are missing. The number of missing ages follows the distribution:
 
 <p align="center">
   <img src="missing_records.png" width="400" title="c"> 
@@ -36,10 +36,10 @@ Test size  | 98
 Scaling    | [0, 1]
 
 
-Missing data were represented as NaNs and filled with the median of the column. Records made of single times (only one race at a given age) exhibit an unrealistic zero standard deviation, these values were also substituted by the variance of the columnn. 
+Missing data were represented as NaNs and filled with the median of the column. Records made of single times (only one race at a given age) exhibit an unrealistic zero standard deviation, these values were also substituted by the variance of the column. 
 
 # Models
-Three different models were used: Support Vector Regressor (SVR), Decission Tree Regressor (DTR) and Gradient Boost Regressor (GBR). Training data was used with 5-fold corss-validation with different settings for the hyperparameters. The best model according the mean absolute error (MAE) was chosen.
+Three different models were used: Support Vector Regressor (SVR), Decision Tree Regressor (DTR) and Gradient Boost Regressor (GBR). Training data was used with 5-fold cross-validation with different settings for the hyperparameters. The best model according to the mean absolute error (MAE) was chosen.
 
 
 # Predictions
