@@ -1,5 +1,4 @@
-"# ML_swimming"
-
+# Regression analysis of swimmer performance
 
 Regression algorithms for predictin swimmer performance at 18 year old based on records at younger ages. Data have been retrieved from the website [1] as CSV using different filters. The approach bases in [2] but different regressors have been employed.
 
